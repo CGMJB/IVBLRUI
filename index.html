@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第五人格选手排名</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>第五人格选手排名</h1>
+      <input type="text" id="playerName" placeholder="输入选手姓名查询">
+      <button onclick="searchPlayer()">查询</button>
+    </header>
+
+    <div id="playerDetail" class="player-detail">
+      <!-- 查询结果会显示在这里 -->
+    </div>
+
+    <div class="ranking">
+      <h2>总排名</h2>
+      <table id="rankingTable">
+        <thead>
+          <tr>
+            <th>排名</th>
+            <th>选手</th>
+            <th>场次</th>
+            <th>积分</th>
+          </tr>
+        </thead>
+        <tbody id="rankingBody">
+          <!-- 排名会显示在这里 -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
